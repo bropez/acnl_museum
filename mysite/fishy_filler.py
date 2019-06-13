@@ -1,3 +1,5 @@
+# getting everything from https://nookipedia.com/wiki/Fish/Animal_Crossing:_New_Leaf
+
 from bs4 import BeautifulSoup
 import requests
 import os
