@@ -9,18 +9,22 @@
         <table class=" table table-hover">
             <tr>
                 <th>Name</th>
+                <th>Image</th>
                 <th>Resale Price</th>
                 <th>Shadow cast</th>
                 <th>Location</th>
-                <th>Image</th>
+                <th>Months Available</th>
+                <th>Time Available</th>
             </tr>
         {% for single_fish in object_list %}
             <tr>
                 <td>{{ single_fish.name }}</td>
+                <td><img src="{{ single_fish.image }}" width="64" height="64"></td>
                 <td>{{ single_fish.price }}</td>
                 <td>{{ single_fish.shadow }}</td>
                 <td>{{ single_fish.location }}</td>
-                <td><img src="{{ single_fish.image }}" width="64" height="64"></td>
+                <td>{{ single_fish.months_available }}</td>
+                <td>{{ single_fish.time }}</td>
             </tr>
         {% endfor %}
         </table>
