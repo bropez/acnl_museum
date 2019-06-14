@@ -13,17 +13,30 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 
     <link rel="stylesheet" href="{% static 'mysite/css/master.css' %}">
+
+    <link href="https://fonts.googleapis.com/css?family=Amatic+SC&display=swap" rel="stylesheet">
 </head>
 <body>
 
-<nav class="navbar navbar-expand-sm navbar-dark sticky-top my_navbar">
-    <a class="navbar-brand" href="{% url 'home' %}">Logo</a>
-    <ul class="navbar-nav">
+
+<nav class="navbar navbar-expand-sm sticky-top my_navbar">
+    <a class="navbar-brand my_navbar_logo" href="{% url 'home' %}">
+        <img src="{% static 'images/museum_logo_transparent.png' %}" height="90px">
+    </a>
+
+    <ul class="nav navbar-nav">
         <li class="nav-item">
-            <a class="nav-link" href="{% url 'fish:all' %}">Fish</a>
+            <a class="nav-link my_navbar_links" href="{% url 'fish:all' %}">Fish</a>
         </li>
         <li class="nav-item">
-            <a class="nav-link" href="#">Placeholder</a>
+{#            change this to the bugs url#}
+            <a class="nav-link my_navbar_links" href="{% url 'bugs:all' %}">Bugs</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link my_navbar_links" href="#">Fossils</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link my_navbar_links" href="#">Art</a>
         </li>
     </ul>
 </nav>

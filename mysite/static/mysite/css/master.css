@@ -2,5 +2,20 @@
 /*https://coolors.co/efc7c2-ffe5d4-bfd3c1-57a773-157145*/
 
 .my_navbar{
-    background-color: #157145;
+    background-color: #808f56;
+    padding: 10px;
+}
+.my_navbar_logo, .my_navbar_links{
+    padding: 10px;
+}
+.my_navbar_links{
+    font-family: 'Amatic SC', cursive;
+    font-size: 45px;
+    color: #e8b967;
+}
+.my_navbar_links:hover{
+    color: #ad6f34;
+}
+.fish_title{
+    text-align: center;
 }

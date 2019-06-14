@@ -22,4 +22,5 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('', views.HomePage.as_view(), name='home'),
     path('fish/', include('fish.urls', namespace='fish')),
+    path('bugs/', include('bugs.urls', namespace='bugs')),
 ]
