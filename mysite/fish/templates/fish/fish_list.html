@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 {% extends 'base.html' %}
 {% block title_block %}
     Fish Collection
@@ -30,37 +29,4 @@
         {% endfor %}
         </table>
     </div>
-=======
-{% extends 'base.html' %}
-{% block title_block %}
-    this the fish
-{% endblock %}
-
-{% block content %}
-    <h1>A fish</h1>
-    <div class="table-responsive">
-        <table class=" table table-hover">
-            <tr>
-                <th>Name</th>
-                <th>Image</th>
-                <th>Resale Price</th>
-                <th>Shadow cast</th>
-                <th>Location</th>
-                <th>Months Available</th>
-                <th>Time Available</th>
-            </tr>
-        {% for single_fish in object_list %}
-            <tr>
-                <td>{{ single_fish.name }}</td>
-                <td><img src="{{ single_fish.image }}" width="64" height="64"></td>
-                <td>{{ single_fish.price }}</td>
-                <td>{{ single_fish.shadow }}</td>
-                <td>{{ single_fish.location }}</td>
-                <td>{{ single_fish.months_available }}</td>
-                <td>{{ single_fish.time }}</td>
-            </tr>
-        {% endfor %}
-        </table>
-    </div>
->>>>>>> c4abd3cca37536a0f47e17ec883a310d99abcae9
 {% endblock %}
